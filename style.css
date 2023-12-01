@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVIGATION BAR START FROM HERE */
+nav{
+    /* //font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul{
+    /* for horizontly */
+    display: flex;  
+    /* to remove dots */
+    list-style-type:none;
+    height:65px;
+    align-items: center;
+    background-color: black ;
+    color: aliceblue;
+}
+nav ul li{
+    padding-left: 10px;
+}
+.brand img{
+    width: 44px;
+    padding:0 8px ;
+    
+}
+
+.brand{
+    
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/* NAVIGATION BAR END FROM HERE */
+
+.container{
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    margin: 16px auto;
+    width:60%;
+    border-radius: 12px;
+    padding:30px;
+    background-image: url(bg.jpg);
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* icon niche ajaye */
+    flex-direction: column;
+}
+
+.icons{
+    margin-top:14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+width:80vw;
+cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.songItem{
+   
+ height:50px;
+ display:flex;
+ background-color: white;
+ 
+ color: black;
+ margin:12px 0;
+ justify-content: space-between;
+ align-items: center;
+ border-radius: 30px;
+}
+
+.songItem img{
+    width:43px;
+    margin:0 23px;
+    border-radius: 32px;
+}
+.timestamp{
+    margin:0 23px;
+    
+}
+
+.timestamp i{
+cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
